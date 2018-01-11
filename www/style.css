@@ -1,0 +1,11 @@
+.pagestart {
+    
+        background-image:url("images/start.gif");
+        background-repeat: no-repeat;
+        height: 100vh;
+        z-index:4;
+}
+.container {
+        width: 800px;
+        
+}
