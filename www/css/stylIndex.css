@@ -1,0 +1,29 @@
+#titr {
+  font-size: 20px;
+  transition: all 2s;
+}
+
+#titr:hover {
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+  border: 1px solid gray;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container .pagestart {
+  background-image: url("../images/start.gif");
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container1 {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #1a7ec0;
+}
+/*# sourceMappingURL=stylIndex.css.map */

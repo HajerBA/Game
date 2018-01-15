@@ -5,5 +5,7 @@ class Person {
         this.surname=surname;
 
     }
-
+toDiscuss(){
+    //dialogue
+}
 }
