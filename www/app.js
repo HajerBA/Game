@@ -1,20 +1,18 @@
 //use strict
-let imgexit=document.querySelector("#imgexit");
 
-imgexit.addEventListener('click',function fermerFenetreCourante()
-{
-  window.close();
-});
 
-let imginst=document.querySelector("#instruction");
+let imgdoct = document.querySelector("#imgdoct");
+let butwelcome = document.querySelector("#butwelcome");
 
-imginst.addEventListener('click',function fermerFenetreCourante()
-{
- alert();//msgbox
+butwelcome.addEventListener('click', function (event) {
+ event.preventDefault();
+
+  imgdoct.style.display = 'block';
+  //imgdoct.style.image-orientation= 'flip';
 });
 
 //pour les interactions
-let newDoc=new Doctor();
-let newBbPatient= new BabyPatient();
+let newDoc = new Doctor();
+let newBbPatient = new BabyPatient();
 
 newDoc.toNote(newBbPatient);

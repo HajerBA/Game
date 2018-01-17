@@ -1,7 +1,7 @@
 class BabyPatient extends Person{
     
         constructor(name,surname,age,weight,state,temperature,tafterv) {
-           super(name,surname);
+           super(name,surname, 0, 0);
            this.age=age;
            this.weight=weight;
            this.state=state;

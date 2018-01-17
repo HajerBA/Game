@@ -67,5 +67,18 @@
 
 }
 .imgbut img{
-    width: 50%;
+    width: 15%;
+}
+.imgbut input[type=button]{
+  display: flex;
+  flex-direction: column;
+}
+#imgdoct{
+    display: none;
+}
+#mumy {
+    left: 450px;
+    position: absolute;
+    top: 25px;
+    image-orientation: flip;
 }
