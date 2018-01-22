@@ -12,18 +12,17 @@
     }
     
     .container-column {
-        display: flex;
-        flex-direction: column-reverse;
-        /*z-index: -4;*/
+        display: inline-block;
         margin-top: 100px;
     }
     
-    .div1, .div3 {
-        justify-content: center;
+    .div1{
+        padding-top: 300px;
+        padding-left: 25px;
         }
     
     .div2 {
-        justify-content: end;
+        padding-right: 70px;
     }
 
 #titre1 {
@@ -43,7 +42,7 @@
 .container1 {
         width: 50%;
         margin:  0 auto;
-        border: 1px solid rgb(26, 126, 192);
+        border: 4px solid rgb(26, 126, 192);
         display: flex;
         flex-direction: column;
 }
@@ -75,10 +74,90 @@
 }
 #imgdoct{
     display: none;
+    left: 330px;
+    position: absolute;
+    top:25px;
+    height: 208px;
+    width: 80px;
 }
 #mumy {
     left: 450px;
     position: absolute;
-    top: 25px;
+    top: 46px;
     image-orientation: flip;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f0f6fc14;
+   
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #eaf1f800;
+   
+}
+.btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #007bff14;
+    
+}
+
+.liItem {
+	color: rgb(2, 22, 22);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+    font-style: italic;
+    /*visibility:hidden;*/
+}
+.liItem label{
+    color: black;
+}
+.titrAlert{
+ color: red;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 30px;
+text-align: center;
+}
+
+/* Animations */
+@keyframes moveToAccueil {
+    to {
+        top: 18px;
+        left: 810px;
+    }
+}
+
+.moveToAccueil {
+    animation: moveToAccueil 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes moveToAccueil {
+    to {
+        top: 18px;
+        left: 810px;
+    }
+}
+
+.moveToAccueil {
+    animation: moveToAccueil 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes moveToAccueill {
+    to {
+        top: 18px;
+        left: 650px;
+    }
+}
+
+.moveToAccueil1 {
+    animation: moveToAccueill 2s;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }

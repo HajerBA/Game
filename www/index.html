@@ -15,34 +15,47 @@
     <div class="big-container">
         <div class="container-column div1">
             
-            <img src="images/butinst.png" alt="instructions" id="instruction" >
-            <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                <hr>
-                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-              </div>
+            
+                <img id="instruction" src="images/butinst.png" class=" btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg" />
+
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                     <strong class="titrAlert"> Welcome</strong>
+                      <p> <i>Our Game is simple:</i> <br> <ol> <li class="liItem"> Think for an action </li> <br>
+                        <li class="liItem">Click the right button </li> <br>
+                        <li class="liItem">  See the result and that's all <br> <img src="images/sympa.gif" alt="sympa" > </li> 
+                        <li class="liItem"> To exit this page : click elsewhere </li>
+                      </ol></p>
+                    </div>
+                  </div>
+                </div>
+           
         </div>
         <div class="container-column div2">
            
             <a href="game.html"> <img src="images/butplay.png" alt="play"> </a> <br>
-            <img src="images/logo2.png" alt="text game">
+            <img src="images/baby.gif" alt="text game">
+            <br>
+            <audio src="song.ogg" style="display:none" id="player"></audio>
+            <a href="#" title="Lancer la lecture"><img src="images/play.png" alt="Lecture" id="btnplay"></a>
+            <a href="#" title="Mettre en pause"><img src="images/stop.png" alt="Pause" id="btnpause"></a>
+            <img src="images/butquit.png" alt="exit" id="imgexit" style="padding-top: 122px;"
+                >
         </div>
-        <div class="container-column div3">
-           
-           <img src="images/butquit.png" alt="exit" id="imgexit">
-        </div>
+               
     </div>
-
+    
+       
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
     crossorigin="anonymous"></script>
-    <script type="text/javascript" src="Person.js"></script>
-    <script type="text/javascript" src="Doctor.js"></script>
-    <script type="text/javascript" src="BabyPatient.js"></script>
-    <script type="text/javascript" src="scriptindex.js"></script>
+    <script type="text/javascript" src="js/person.js"></script>
+    <script type="text/javascript" src="js/doctor.js"></script>
+    <script type="text/javascript" src="js/babypatient.js"></script>
+    <script type="text/javascript" src="js/scriptindex.js"></script>
 </body>
 </html>
