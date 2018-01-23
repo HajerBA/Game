@@ -3,52 +3,104 @@ class Doctor extends Person {
     constructor(name, surname) {
         super(name, surname, 100, 100);
         this.currentPatient = null;
+        this.spritDoct=document.querySelector("#imgdoct");
+        this.spritBaby=document.querySelector("#spritBB");
+        this.temp=document.querySelector("#temp");
+        this.cry=document.querySelector("#cry");
+        this.weight=document.querySelector("#weight");
+        this.happy=document.querySelector("#happiness");
+        this.bull = document.querySelector("#talkDoct");
+        this.p=document.querySelector("#talkDoct p");
     }
+
     toNote(patient) {
         //write on database
         let firstTime = true;
         this.currentPatient = patient;
+        
+
+        happy.style.color="red";
+        happy.textContent="Happiness: 60 %";
+        cry.style.color="red";
+        cry.textContent="Crying: 20 %";
+
         let accDiv = document.querySelector("#accDiv");
         let mumy =document.querySelector("#mumy");
         let doct =document.querySelector("#imgdoct");
 
         mumy.className='';
         mumy.classList.add('moveToAccueil');
-        doct.className='';
-        doct.classList.add('moveToAccueill');
-        //a refaire inchala
-/*<div class="talk-bubble tri-right round btm-left-in">
-  <div class="talktext">
-    <p>Now we add a border and it looks like a comic. Uses .border .round and .btm-left-in</p>
-  </div>
-</div> :pour docror */
-/*npour maman: je laisse celui la et j'enleve bordur du doct ou tcolorer etcc inchala: 
-<div class="talk-bubble tri-right round right-in">
-  <div class="talktext">
-    <p>Moving our way back up the right side indented. Uses .round and .right-in</p>
-  </div>
-</div>*/
-
-        /* ancien code : let bull = document.createElement("div");
-        bull.class='talk-bubble tri-right round btm-left';
-
-        let divtalk=document.createElement("div");
-        divtalk.class='talktext';
-
-        let p=document.createElement("p");
-        p.textContent="Moving our way back up the right side indented. Uses .round and .right-in";
-
-        divtalk.appendChild(p);
-        bull.appendChild(divtalk);
-        accDiv.appendChild(bull);
-*/
-
+        //doct.className='';
+        doct.classList.add("doctAccueil");
+        this.bull.style.display="inline-block";
+        this.bull.style.marginLeft="54px";
+        this.bull.style.marginTop="-20px";
+        this.bull.style.zIndex=2;
+        this.p.textContent="Comment il va aujourd'hui?";
+        let talkMum=document.addEventListener("keypress", function (event){
+                if (event.keyCode === 13) {
+                    bull.style.display='none';
+                    let bullMum = document.querySelector("#talkMum");
+                    bullMum.style.display="inline-block";
+                    bullMum.style.marginLeft="730px";
+                    bullMum.style.marginTop="-6px";
+                    bullMum.style.zIndex=2;
+                    let p=document.querySelector("#talkMum p");
+                    p.textContent="il a de la fievre et tousse un peu";
+                }
+        
+        });
+        
+      /*npour maman: je laisse celui la et j'enleve bordur du doct ou tcolorer*/ 
+        
     }
     toExamine() {
         //mesurer temperature l'image du diff state de bebe
+        let mumy =document.querySelector("#mumy");
+        mumy.style.display="none";
+        let bullMum = document.querySelector("#talkMum");
+        let spritDoct=document.querySelector("#imgdoct");
+        let spritBaby=document.querySelector("#spritBB");
+        let temp=document.querySelector("#temp");
+        let cry=document.querySelector("#cry");
+        let weight=document.querySelector("#weight");
+        let happy=document.querySelector("#happiness");
+        
+        bullMum.style.display="none";
+
+        happy.style.color="red";
+        happy.textContent="Happiness: 0 %";
+        cry.style.color="red";
+        cry.textContent="Crying: 70 %";
+        temp.style.color="red";
+        temp.textContent="Temperature: 39°c";
+
+        spritBaby.style.display="block";
+        spritBaby.classList.add("bbExam");
+        spritDoct.classList.add("doctExam");
+        let bull = document.querySelector("#talkDoct");
+        bull.style.display="inline-block";
+        bull.style.marginLeft="50px";
+        bull.style.marginTop="-36px";
+        bull.style.zIndex=2;
+        this.p.textContent="Calme toi mon petit loulou";
     }
     toWeigh() {
-
+        let mumy =document.querySelector("#mumy");
+        mumy.style.display="none";
+        this.bull.style.display='none';
+        this.spritDoct.classList.add("doctWeight");
+        this.spritBaby.style.display="block";
+        this.spritBaby.classList.add("bbWeight");
+        
+        this.happy.style.color="red";
+        this.happy.textContent="Happiness: 0 %";
+        this.cry.style.color="red";
+        this.cry.textContent="Crying: 50 %";
+        this.temp.style.color="red";
+        this.temp.textContent="Temperature: 39°c";
+        this.weight.style.color="red";
+        this.weight.textContent="Weight: 7kg";
     }
     toVaccine() {
 

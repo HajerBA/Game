@@ -1,4 +1,5 @@
 //use strict
+
 /*play song*/
 document.getElementById('btnplay').onclick = function() {
   document.getElementById('player').play();
@@ -31,27 +32,12 @@ butwelcome.addEventListener('click', function (event) {
   happy.textContent="Happiness: 90 %";
 
   let accDiv = document.querySelector("#accDiv");
-  let bull = document.createElement("div");
+  let bull = document.querySelector("#talkDoct");
   bull.style.display="inline-block";
-  bull.style.position="absolute";
-  //bull.classList.add("talk-bubble tri-right round btm-left-in");
-  bull.style.zIndex="2px";
-  bull.style.paddingLeft="55px";
-  bull.style.paddingTop="20px";
-  bull.style.backgroundColor="rgb(235, 235, 149)";
-  
-  
-  
-
-  let divtalk=document.createElement("div");
-  divtalk.class='talktext';
-
-  let p=document.createElement("p");
+  bull.style.marginLeft="46px";
+  bull.style.marginTop="-26px";
+  let p=document.querySelector("#talkDoct p");
   p.textContent="Fares c'est à vous";
-
-  divtalk.appendChild(p);
-  bull.appendChild(divtalk);
-  accDiv.appendChild(bull);
 });
 
 //pour les interactions
@@ -64,4 +50,14 @@ let tonote=document.querySelector("#butToNote");
 tonote.addEventListener('click',function (event) {
   event.preventDefault();
   newDoc.toNote(newBbPatient);
+});
+let toExam=document.querySelector("#butToExamine");
+toExam.addEventListener('click',function (event) {
+  event.preventDefault();
+  newDoc.toExamine(newBbPatient);
+});
+let toWeigh=document.querySelector("#butToWeigh");
+toWeigh.addEventListener('click',function (event) {
+  event.preventDefault();
+  newDoc.toWeigh(newBbPatient);
 });

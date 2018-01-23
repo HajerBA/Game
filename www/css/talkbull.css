@@ -1,14 +1,11 @@
 /* CSS talk bubble */
 .talk-bubble {
   display: none;
-  margin: -67px;
   position: relative;
-  width: 200px;
-  height: 100px;
-  background-color: #ebeb95;
+  width: 158px;
+  height: 60px;
+  background-color: lightsalmon;
   z-index: 2px;
-  padding-left: 382px;
-  padding-top: 20px;
 }
 
 /*
@@ -113,12 +110,12 @@
   position: absolute;
   width: 0;
   height: 0;
-  left: 38px;
+  left: 18px;
   right: auto;
   top: auto;
   bottom: -20px;
   border: 12px solid;
-  border-color: lightyellow transparent transparent lightyellow;
+  border-color: lightsalmon transparent transparent lightsalmon;
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -143,7 +140,7 @@
   right: 38px;
   bottom: -20px;
   border: 12px solid;
-  border-color: lightyellow lightyellow transparent transparent;
+  border-color: lightsalmon lightsalmon transparent transparent;
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -227,8 +224,8 @@
 
 /* talk bubble contents */
 .talktext {
-  padding: 1em;
-  text-align: left;
+  padding: 10px;
+  text-align: center;
   line-height: 1.5em;
   font-weight: bold;
 }

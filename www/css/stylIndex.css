@@ -12,19 +12,18 @@
 }
 
 .container-column {
-	display: inline-block;
-	margin-top: 100px;
+  display: inline-block;
+  margin-top: 100px;
 }
 
-.div1{
-	padding-top: 300px;
-	padding-left: 25px;
-	}
+.div1 {
+  padding-top: 300px;
+  padding-left: 25px;
+}
 
 .div2 {
-	padding-right: 70px;
+  padding-right: 70px;
 }
-
 
 #titre1 {
   font-size: 20px;
@@ -76,14 +75,101 @@
   flex-direction: column;
 }
 
-#imgdoct {
+#talkDoct {
   display: none;
+}
+
+#talkMum {
+  display: none;
+}
+
+#imgdoct {
   left: 330px;
   position: absolute;
-  top:25px;
+  top: 25px;
   height: 208px;
   width: 80px;
+  background-image: url("../images/spritDoct.png");
+  animation-duration: 1s, 3s;
+  animation-iteration-count: 3, 1;
+  animation-timing-function: walkRight steps(6), linear;
+  animation-fill-mode: forwards;
+  background-position: -218px -40px;
+}
 
+@keyframes walkRight {
+  from {
+    background-position-y: 0;
+    background-position-x: 0;
+  }
+  to {
+    background-position-y: 0;
+    background-position-x: -630px;
+  }
+}
+
+@keyframes translate {
+  to {
+    left: 90%;
+  }
+}
+
+#imgdoct.doctAccueil {
+  /*background-image: url('../images/spritDoct.png');*/
+  left: 666px;
+  top: 18px;
+  background-position: -688px -40px;
+}
+
+#imgdoct.doctExam {
+  left: 344px;
+  top: 230px;
+  background-position: -310px -48px;
+}
+
+#imgdoct.doctWeight {
+  left: 650px;
+  top: 226px;
+  background-position: -544px -316px;
+}
+
+#imgdoct.doctVaccin {
+  left: 666px;
+  top: 18px;
+  background-position: -400px -40px;
+}
+
+#imgdoct.doctOrder {
+  left: 666px;
+  top: 18px;
+  background-position: -210px -40px;
+}
+
+#spritBB {
+  display: none;
+  position: absolute;
+  /*top: 200px;*/
+  height: 173px;
+  width: 156px;
+  background-image: url("../images/spritBaby.png");
+  /*background-position: -618px -48px;*/
+  background-size: 570px;
+}
+
+#spritBB.bbExam {
+  left: 395px;
+  top: 216px;
+  background-position: -428px 5px;
+}
+
+#spritBB.bbWeight {
+  left: 674px;
+  top: 184px;
+  background-position: -534px -162px;
+}
+
+#spritBB.bbVaccin {
+  background-position: -400px -40px;
 }
 
 #mumy {
@@ -95,38 +181,46 @@
 
 .btn-primary {
   color: #fff;
-  background-color: #f0f7ff14;
- 
+  background-color: #f0f6fc14;
 }
+
 .btn-primary:hover {
   color: #fff;
-  background-color: #e9f1f814;
- 
+  background-color: #eaf1f800;
 }
-.btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+
+.btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #007bff14;
-  
 }
+
 .liItem {
-	color: rgb(2, 22, 22);
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
+  color: #021616;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
   font-style: italic;
-  
+  /*visibility:hidden;*/
 }
-.liItem label{
+
+.liItem label {
   color: black;
 }
-.titrAlert{
-	color: red;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 30px;
-	text-align: center;
- }
 
- /* Animations */
+.titrAlert {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+#mask {
+  width: 65px;
+  height: 80px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+/* Animations */
 @keyframes moveToAccueil {
   to {
     top: 18px;
@@ -140,14 +234,29 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-@keyframes moveToAccueill {
+
+@keyframes moveToAccueil {
   to {
-      top: 18px;
-      left: 650px;
+    top: 18px;
+    left: 810px;
   }
 }
 
-.moveToAccueill {
+.moveToAccueil {
+  animation: moveToAccueil 2s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveToAccueill {
+  to {
+    top: 18px;
+    left: 650px;
+  }
+}
+
+.moveToAccueil1 {
   animation: moveToAccueill 2s;
   animation-duration: 2s;
   animation-iteration-count: 1;

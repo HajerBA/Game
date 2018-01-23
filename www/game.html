@@ -15,8 +15,24 @@
 <body>
 
     <div class="imgbut">
+        <div>
         <img src="images/mumy.png" alt="mum and  bayby" id="mumy">
-        <img src="images/doctor.png" alt="doctor" id="imgdoct">
+        <div id="talkMum" class="talk-bubble tri-right round btm-right-in">
+            <div class="talktext">
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div  id="imgdoct">
+            <div id="talkDoct" class="talk-bubble tri-right round btm-left-in">
+                    <div class="talktext">
+                      <p></p>
+                    </div>
+                  </div>
+            </div>
+        <div id="spritBB">
+
+        </div>
         <br>
         <div id="levels">
 
@@ -47,15 +63,17 @@
             <br>
             <button type="button" class="btn btn-outline-primary" id="buToWelcome"> To Welcome </button>
             <button type="button" class="btn btn-outline-primary" id="butToNote"> To Note </button>
-            <button type="button" class="btn btn-outline-primary">To Examine</button>
-            <button type="button" class="btn btn-outline-primary">To Weigh</button>
+
+            <button type="button" class="btn btn-outline-primary" id="butToExamine">To Examine</button>
+            <button type="button" class="btn btn-outline-primary" id="butToWeigh">To Weigh</button>
             <button type="button" class="btn btn-outline-primary">To Vaccin</button>
             <button type="button" class="btn btn-outline-primary">To WriteOrder</button>
             <button type="button" class="btn btn-outline-primary">Back Home</button>
 
-            <br>
+            <div id="mask">
+                <img src="./images/spritBaby.png" alt="">
+            </div>
 
-            <br>
             <div class="btn-group" role="group" aria-label="Basic example">
 
                 <button type="button" class="btn btn-success">Replay</button>
