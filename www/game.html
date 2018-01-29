@@ -15,13 +15,13 @@
 <body>
 
     <div class="imgbut">
-        <div>
-        <img src="images/mumy.png" alt="mum and  bayby" id="mumy">
-        <div id="talkMum" class="talk-bubble tri-right round btm-right-in">
-            <div class="talktext">
+        <div id="mumtalk">
+             <img src="images/mumy.png" alt="mum and  bayby" id="mumy">
+             <div id="talkMum" class="talk-bubble tri-right round btm-right-in">
+             <div class="talktext">
               <p></p>
-            </div>
-          </div>
+             </div>
+             </div>
         </div>
         <div  id="imgdoct">
             <div id="talkDoct" class="talk-bubble tri-right round btm-left-in">
@@ -66,30 +66,24 @@
 
             <button type="button" class="btn btn-outline-primary" id="butToExamine">To Examine</button>
             <button type="button" class="btn btn-outline-primary" id="butToWeigh">To Weigh</button>
-            <button type="button" class="btn btn-outline-primary">To Vaccin</button>
-            <button type="button" class="btn btn-outline-primary">To WriteOrder</button>
-            <button type="button" class="btn btn-outline-primary">Back Home</button>
+            <button type="button" class="btn btn-outline-primary"id="butVaccin">To Vaccin</button>
+            <button type="button" class="btn btn-outline-primary" id="butOrder">To WriteOrder</button>
+            <button type="button" class="btn btn-outline-primary" id="butHome">Back Home</button>
 
             <div id="mask">
                 <img src="./images/spritBaby.png" alt="">
+                <img src="./images/childs-weight2.png" alt="">
             </div>
 
             <div class="btn-group" role="group" aria-label="Basic example">
 
-                <button type="button" class="btn btn-success">Replay</button>
+                <button type="button" class="btn btn-success" id="butReplay">Replay</button>
                 <button type="button" class="btn btn-danger" id="btnExit" data-toggle="modal" data-target=".bs-example-modal-lg">Exit</button>
-                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <strong class="titrAlert"> Oops </strong>
-
-                            <img src="images/GameOver.gif" alt="Good Bye">
-                        </div>
-                    </div>
-                </div>
+                
             </div>
+           
         </div>
-
+        
 
     </div>
 
@@ -108,11 +102,20 @@
             <img src="images/salle d'acceuil.jpg" alt="accueil">
         </div>
         <div class="elemcont">
+           <img src="images/backHome.gif" alt="mum and  bayby at home" id="mumy1">
             <img src="images/sweethome.jpg" alt="home" style="width: 400px;height: 214px;">
         </div>
     </div>
 
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <strong class="titrAlert"> Oops </strong>
 
+                <img src="images/GameOver.gif" alt="Good Bye"/>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

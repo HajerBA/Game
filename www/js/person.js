@@ -6,7 +6,5 @@ class Person {
         this.posX = posX;
         this.posY = posY;
     }
-toDiscuss(){
-    //dialogue
-}
+
 }

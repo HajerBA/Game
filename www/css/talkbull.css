@@ -2,21 +2,11 @@
 .talk-bubble {
   display: none;
   position: relative;
-  width: 158px;
-  height: 60px;
+  width: 160px;
   background-color: lightsalmon;
   z-index: 2px;
 }
 
-/*
-.talk-bubble {
-	margin: 40px;
-  display: inline-block;
-  position: relative;
-	width: 200px;
-	height: auto;
-	background-color: lightyellow;
-}*/
 .round {
   border-radius: 30px;
   -webkit-border-radius: 30px;

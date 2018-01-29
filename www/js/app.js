@@ -36,8 +36,10 @@ butwelcome.addEventListener('click', function (event) {
   bull.style.display="inline-block";
   bull.style.marginLeft="46px";
   bull.style.marginTop="-26px";
+  let nomBb=prompt("entrez un nom");
+  
   let p=document.querySelector("#talkDoct p");
-  p.textContent="Fares c'est à vous";
+  p.textContent=nomBb+" c'est à vous";
 });
 
 //pour les interactions
@@ -61,3 +63,25 @@ toWeigh.addEventListener('click',function (event) {
   event.preventDefault();
   newDoc.toWeigh(newBbPatient);
 });
+
+let toVaccin=document.querySelector("#butVaccin");
+toVaccin.addEventListener('click',function (event) {
+  event.preventDefault();
+  newDoc.toVaccine(newBbPatient);
+});
+let toOrder=document.querySelector("#butOrder");
+toOrder.addEventListener('click',function (event) {
+  event.preventDefault();
+  newDoc.toWriteOrder(newBbPatient);
+});
+let toHome=document.querySelector("#butHome");
+toHome.addEventListener('click',function (event) {
+  event.preventDefault();
+  newBbPatient.backHome();
+});
+let replay=document.querySelector("#butReplay");
+replay.addEventListener('click',function (event) {
+  event.preventDefault();
+  window.location.reload();
+});
+
