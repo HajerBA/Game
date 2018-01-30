@@ -157,8 +157,8 @@
 }
 
 #spritBB.bbWeight {
-  left: 696px;
-  top: 190px;
+  left: 714px;
+  top: 222px;
   background-position: -560px -326px;
 }
 
@@ -220,6 +220,13 @@
 
 .titrAlert {
   color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.titrAlert1 {
+  color: blue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   text-align: center;

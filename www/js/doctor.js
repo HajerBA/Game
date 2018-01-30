@@ -37,24 +37,24 @@ class Doctor extends Person {
         this.bull.style.marginLeft = "54px";
         this.bull.style.marginTop = "-20px";
         this.bull.style.zIndex = 2;
-        this.p.textContent = "Comment il va aujourd'hui?";
+        this.p.textContent = "How is he doing today?";
         let talkMum = document.addEventListener("keypress", function (event) {
             if (event.keyCode === 13) {
                 let bull = document.querySelector("#talkDoct");
                 bull.style.display = 'none';
                 let bullMum = document.querySelector("#talkMum");
                 bullMum.style.display = "inline-block";
-                bullMum.style.position="absolute";
-                bullMum.style.marginLeft = "710px";
-                bullMum.style.marginTop = "-16px";
+                bullMum.style.position = "absolute";
+                bullMum.style.marginLeft = "588px";
+                bullMum.style.marginTop = "-10px";
                 bullMum.style.zIndex = 2;
                 let p = document.querySelector("#talkMum p");
-                p.textContent = "il a de la fievre et tousse un peu";
+                p.textContent = "he has fever and coughs a little";
             }
 
         });
 
-        /*npour maman: je laisse celui la et j'enleve bordur du doct ou tcolorer*/
+
 
     }
     toExamine() {
@@ -83,10 +83,10 @@ class Doctor extends Person {
         spritDoct.classList.add("doctExam");
         let bull = document.querySelector("#talkDoct");
         bull.style.display = "inline-block";
-        bull.style.marginLeft = "50px";
-        bull.style.marginTop = "-36px";
+        bull.style.marginLeft = "42px";
+        bull.style.top = "-40px";
         bull.style.zIndex = 2;
-        this.p.textContent = "Calme toi mon petit loulou";
+        this.p.textContent = "Calm down my little loulou";
     }
     toWeigh() {
         let mumy = document.querySelector("#mumy");
@@ -95,6 +95,11 @@ class Doctor extends Person {
         this.spritDoct.classList.add("doctWeight");
         this.spritBaby.style.display = "block";
         this.spritBaby.classList.add("bbWeight");
+        let balance = document.querySelector("#balance");
+        balance.style.display = "block";
+        balance.style.width = "180px";
+        balance.style.marginLeft = "-24px";
+        balance.style.marginTop = "98px";
 
         this.happy.style.color = "green";
         this.happy.textContent = "Happiness: 0 %";
@@ -110,7 +115,11 @@ class Doctor extends Person {
         mumy.style.display = "none";
         this.bull.style.display = 'none';
         this.spritDoct.classList.add("doctVaccin");
+        
         this.spritBaby.style.display = "block";
+        let balance = document.querySelector("#balance");
+        balance.style.display = "none";
+       
         this.spritBaby.classList.add("bbVaccin");
 
         this.happy.style.color = "green";
@@ -145,7 +154,7 @@ class Doctor extends Person {
         this.bull.style.marginLeft = "28px";
         this.bull.style.marginTop = "-116px";
         this.bull.style.zIndex = 2;
-        this.p.textContent = "s'il a de la fièvre donne lui doliprane , bonne journée et à la prochaine";
+        this.p.textContent = "if he has fever give him doliprane, have a good day and see you next time";
         let talkMum = document.addEventListener("keypress", function (event) {
             if (event.keyCode === 13) {
                 let bull = document.querySelector("#talkDoct");
@@ -153,11 +162,11 @@ class Doctor extends Person {
                 let bullMum = document.querySelector("#talkMum");
                 bullMum.style.display = "inline-block";
                 bullMum.style.position = "absolute";
-                bullMum.style.left = "708px";
-                bullMum.style.top = "407px";
+                bullMum.style.left = "2px";
+                bullMum.style.top = "432px";
                 bullMum.style.zIndex = 2;
                 let p = document.querySelector("#talkMum p");
-                p.textContent = "D'accord, au revoir doctor :) ";
+                p.textContent = "Okay, goodbye doctor :) ";
             }
 
         });
