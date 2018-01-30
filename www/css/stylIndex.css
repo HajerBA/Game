@@ -75,6 +75,10 @@
   flex-direction: column;
 }
 
+#progCry {
+  color: red;
+}
+
 #talkDoct {
   display: none;
 }

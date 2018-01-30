@@ -12,6 +12,8 @@ class BabyPatient extends Person{
            this.cry=document.querySelector("#cry");
            this.weight=document.querySelector("#weight");
            this.happy=document.querySelector("#happiness");
+           this.progCry = document.querySelector("#progCry");
+           this.progHapy = document.querySelector("#progHapy");
         }
 
 backHome(){
@@ -24,9 +26,9 @@ backHome(){
         let bullMum = document.querySelector("#talkMum");
         bullMum.style.display = "none";
         this.happy.style.color="green";
-        this.happy.textContent="Happiness: 50 %";
+        this.progHapy.setAttribute("value","50");
         this.cry.style.color="green";
-        this.cry.textContent="Crying: 0 %";
+        this.progCry.setAttribute("value","0");
         this.temp.style.color="green";
         this.temp.textContent="Temperature: 39,5°c";
         this.weight.style.color="green";

@@ -7,8 +7,10 @@ class Doctor extends Person {
         this.spritBaby = document.querySelector("#spritBB");
         this.temp = document.querySelector("#temp");
         this.cry = document.querySelector("#cry");
+        this.progCry = document.querySelector("#progCry");
         this.weight = document.querySelector("#weight");
         this.happy = document.querySelector("#happiness");
+        this.progHapy = document.querySelector("#progHapy");
         this.bull = document.querySelector("#talkDoct");
         this.p = document.querySelector("#talkDoct p");
         this.bullMum = document.querySelector("#talkMum");
@@ -21,9 +23,9 @@ class Doctor extends Person {
 
 
         happy.style.color = "red";
-        happy.textContent = "Happiness: 60 %";
+        progHapy.setAttribute("value","60");
         cry.style.color = "red";
-        cry.textContent = "Crying: 20 %";
+        progCry.setAttribute("value","20");
 
         let accDiv = document.querySelector("#accDiv");
         let mumy = document.querySelector("#mumy");
@@ -72,9 +74,9 @@ class Doctor extends Person {
         bullMum.style.display = "none";
 
         happy.style.color = "red";
-        happy.textContent = "Happiness: 0 %";
+        progHapy.setAttribute("value","0");
         cry.style.color = "green";
-        cry.textContent = "Crying: 70 %";
+        progCry.setAttribute("value","70");
         temp.style.color = "red";
         temp.textContent = "Temperature: 39°c";
 
@@ -102,9 +104,9 @@ class Doctor extends Person {
         balance.style.marginTop = "98px";
 
         this.happy.style.color = "green";
-        this.happy.textContent = "Happiness: 0 %";
+        progHapy.setAttribute("value","0");
         this.cry.style.color = "red";
-        this.cry.textContent = "Crying: 50 %";
+        progCry.setAttribute("value","50");
         this.temp.style.color = "green";
         this.temp.textContent = "Temperature: 39°c";
         this.weight.style.color = "red";
@@ -123,9 +125,9 @@ class Doctor extends Person {
         this.spritBaby.classList.add("bbVaccin");
 
         this.happy.style.color = "green";
-        this.happy.textContent = "Happiness: 0 %";
+        progHapy.setAttribute("value","0");
         this.cry.style.color = "red";
-        this.cry.textContent = "Crying: 100 %";
+        progCry.setAttribute("value","100");
         this.temp.style.color = "red";
         this.temp.textContent = "Temperature: 39°c";
         this.weight.style.color = "green";
@@ -142,9 +144,9 @@ class Doctor extends Person {
         mumy.classList.add("takeOrder");
 
         this.happy.style.color = "red";
-        this.happy.textContent = "Happiness: 0 %";
+        progHapy.setAttribute("value","0");
         this.cry.style.color = "green";
-        this.cry.textContent = "Crying: 80 %";
+        progCry.setAttribute("value","80");
         this.temp.style.color = "red";
         this.temp.textContent = "Temperature: 39°c";
         this.weight.style.color = "green";

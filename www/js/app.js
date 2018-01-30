@@ -16,7 +16,8 @@ let temp = document.querySelector("#temp");
 let cry = document.querySelector("#cry");
 let weight = document.querySelector("#weight");
 let happy = document.querySelector("#happiness");
-
+let progCry = document.querySelector("#progCry");
+let progHapy = document.querySelector("#progHapy");
 
 let imgdoct = document.querySelector("#imgdoct");
 let butwelcome = document.querySelector("#buToWelcome");
@@ -28,8 +29,8 @@ butwelcome.addEventListener('click', function (event) {
   imgdoct.style.left;
   imgdoct.style.top;
 
-  happy.style.color = "red";
-  happy.textContent = "Happiness: 90 %";
+  progHapy.style.color = "red";
+  progHapy.setAttribute("value","90");
 
   let accDiv = document.querySelector("#accDiv");
   let bull = document.querySelector("#talkDoct");
